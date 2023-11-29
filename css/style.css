@@ -1,0 +1,341 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 2;
+  background-color: #fff;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(34, 183, 146);
+}
+
+.skip a {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  background: white;
+  padding: 6px;
+  transition: top 0.3s ease;
+  z-index: 1000;
+}
+
+.skip a:focus {
+  top: 20px;
+}
+
+/* Sticky header */
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+/* Parallax effect for the image */
+.parallax {
+  background-image: url('../images/zelda_island.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+/* Introduction section with limited width */
+.introduction {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styles for the additional image */
+#home-image2 {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  bottom: 0;
+}
+
+/* games style */
+/* games style */
+/* games style */
+
+
+.game-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px
+}
+
+.game-container {
+  cursor: pointer;
+  height: 350px;
+  width: 100%;
+}
+
+.game-card {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  transform-style: preserve-3d;
+  justify-content: center;
+}
+
+.game-front,
+.game-back {
+  margin-left: 10vw;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  transition: transform 1s ease;
+}
+
+.game-front:focus,
+.game-back:focus {
+  box-shadow: 0 0 20px #bc5927;
+}
+
+.game-front img {
+  height: 300px;
+}
+
+.game-front {
+  z-index: 2;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: translate(-5%, -5%);
+}
+
+.game-back {
+  z-index: 1;
+  overflow: auto;
+  text-align: center;
+  padding: 2px;
+  border-radius: 10%;
+  background: rgba(223, 223, 209, 0.9);
+  transform: translate(5%, 5%);
+
+}
+
+.game-back p {
+  left: 30px;
+}
+
+.game-description {
+  padding: 20px
+}
+
+/* shows style */
+/* shows style */
+/* shows style */
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+.gallery-item {
+  min-width: 200px;
+  margin: 10px;
+}
+
+.gallery-item:hover {
+  transition: transform 1s ease-out;
+}
+
+.gallery-item img:hover {
+  border: 3px solid rgb(99, 168, 153);
+  box-shadow: 0 0 10px #009578;
+  cursor: pointer;
+}
+
+.gallery-item img:focus {
+  box-shadow: 0 0 20px #bc5927;
+}
+
+
+.gallery {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.gallery-item.active {
+  transform: scale(1.1);
+}
+
+.gallery img {
+  height: 300px;
+  width: auto;
+}
+
+.info-container {
+  margin-top: 20px;
+  overflow: auto;
+  background: #ded0d0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  margin: 40px 10px;
+  box-sizing: border-box;
+}
+
+#tv-show-title {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#tv-show-info {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+#tv-show-platforms {
+  color: #444;
+  font-weight: bold;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .skip a {
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  /*Turn off parallax*/
+  header {
+    background-attachment: initial;
+  }
+
+  .gallery-item:hover {
+    transition: none;
+  }
+
+  .gallery-item img:hover {
+    box-shadow: none;
+  }
+
+  .gallery-item img:focus {
+    box-shadow: none;
+  }
+
+  .gallery {
+    transition: none;
+  }
+
+  .gallery-item.active {
+    transform: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .game-grid {
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    padding-bottom: 30px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .game-container {
+    margin-top: 5%;
+    height: 350px;
+    width: 100%;
+  }
+
+  .game-front,
+  .game-back {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .game-front img {
+    height: 350px;
+  }
+
+  .info-container {
+    margin: 40px 50px;
+  }
+
+}
+
+@media screen and (min-width: 1250px) {
+  .game-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 5%;
+    padding: 0px;
+    padding-bottom: 30px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .game-container {
+    margin-top: 5%;
+  }
+
+  .info-container {
+    margin: 40px 150px;
+  }
+}

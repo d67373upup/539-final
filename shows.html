@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo-me.jpeg">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Shows Gallery</title>
+</head>
+
+<body>
+    <div class="skip"><a href="#skip">Skip to Main Content</a></div>
+    <header class="sticky">
+        <nav>
+            <h1>Shows Gallery</h1>
+            <ul>
+                <li class="nav-bar"><a href="index.html">About</a></li>
+                <li class="nav-bar"><a href="games.html">Games</a></li>
+                <li class="nav-bar"><a href="shows.html">TV Shows</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id="skip" tabindex="0">
+        <div class="gallery-container">
+            <div id="gallery" class="gallery">
+                <div class="gallery-item" data-title="Narcos" data-info="A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug kingpins who plagued the country through the years.
+                " data-platforms="Netflix, Hulu">
+                    <img src="images/narcos.jpeg" alt="narcos Poster" tabindex="0">
+                </div>
+
+                <div class="gallery-item" data-title="The Continental" data-info="Set in 1970s New York City, The Continental explores the origin of the iconic hotel-for-assassins centerpiece of the John Wick universe seen through the eyes and action of a young Winston Scott.
+                " data-platforms="peacocktv">
+                    <img src="images/continental.jpeg" alt="continental Poster" tabindex="0">
+                </div>
+
+                <div class="gallery-item" data-title="Person of Interest" data-info="Former CIA agent Reese (Jim Caviezel) -- now presumed dead -- and billionaire software genius Finch (Michael Emerson) join forces as a vigilante crime-fighting team. Using Finch's program, which employs pattern recognition to determine individuals who will soon be involved in violent crimes, they combine Reese's covert-operations training and Finch's money and cyberskills to stop crimes before they happen. Former Army Intelligence Support Activity operative Sameen Shaw joins the pair in their quest." data-platforms="Prime">
+                    <img src="images/Person_of_Interest.jpg" alt="Person_of_Interest Poster" tabindex="0">
+                </div>
+
+                <div class="gallery-item" data-title="Stranger Things" data-info="In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.
+                " data-platforms="Netflix">
+                    <img src="images/stranger_things.jpg" alt="stranger_things Poster" tabindex="0">
+                </div>
+
+                <div class="gallery-item" data-title="Cyberpunk: Edgerunners" data-info="A street kid tries to survive in a technology and body modification-obsessed city of the future. With everything to lose, he chooses to stay alive by becoming an edgerunner: a mercenary outlaw, also known as a cyberpunk.
+                " data-platforms="Netflix">
+                    <img src="images/Edgerunners.jpeg" alt="Edgerunners Poster" tabindex="0">
+                </div>
+
+                <div class="gallery-item" data-title="The Boys" data-info="Superheroes are often as popular as celebrities, as influential as politicians, and sometimes even as revered as gods. But that's when they're using their powers for good. What happens when the heroes go rogue and start abusing their powers? When it's the powerless against the super powerful, the Boys head out on a heroic quest to expose the truth about the Seven and Vought, the multibillion-dollar conglomerate that manages the superheroes and covers up their dirty secrets. Based on the comic book series of the same name." data-platforms="Prime">
+                    <img src="images/the_boys.jpeg" alt="the_boys Poster" tabindex="0">
+                </div>
+                <!-- ... -->
+            </div>
+        </div>
+
+        <div id="info-container" class="info-container" style="display: none;">
+            <h2 id="tv-show-title"></h2>
+            <p id="tv-show-info"></p>
+            <p id="tv-show-platforms"></p>
+        </div>
+        <script src="script.js"></script>
+    <footer>
+        <p>Zeyu Lou &#169; 2023</p>
+    </footer>
+
+</body>
+
+</html>

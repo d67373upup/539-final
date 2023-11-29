@@ -107,6 +107,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding-bottom: 50px
+  overflow: hidden;
 }
 
 .game-container {
@@ -125,7 +126,7 @@ footer {
 
 .game-front,
 .game-back {
-  margin-left: 10vw;
+  margin-left: 3vw;
   position: absolute;
   width: 300px;
   height: 300px;
